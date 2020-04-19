@@ -18,7 +18,7 @@ Configure the following fields, leave the others at their default value.
 
 <hr>
 
-###Install Software
+### Install Software
 
 Now set up the software to run the job. Using sbt, an open source build tool, you'll build the JAR for the job you'll submit to the Cloud Dataproc cluster. This JAR will contain the program and the required packages necessary to run the job. The job will detect faces in a set of image files stored in a Google Cloud Storage (GCS) bucket, and write out image files with the faces outlined, to either the same or to another Cloud Storage bucket.
 
@@ -103,7 +103,7 @@ If prompted to use a zone instead of a region, enter Y.
 
 This might take a couple minutes. The default cluster settings, which include two worker nodes, should be sufficient for this lab. n1-standard-2 is specified as both the worker and master machine type to reduce the overall number of cores used by the cluster.
 
-###Submit your job to Cloud Dataproc
+### Submit your job to Cloud Dataproc
 In this lab the program you're running is used as a face detector, so the inputted haar classifier must describe a face. A haar classifier is an XML file that is used to describe features that the program will detect. You will download the haar classifier file and include its GCS path in the first argument when you submit your job to your Cloud Dataproc cluster.
 
 <h6>Step 1</hs>
