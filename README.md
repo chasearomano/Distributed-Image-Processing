@@ -7,7 +7,7 @@ Cloud Dataproc is a managed Spark and Hadoop service that lets you take advantag
 
 <hr>
 
-<h6>Create a development machine in Compute Engine</h6>
+### Create a development machine in Compute Engine
 
 Configure the following fields, leave the others at their default value.
 <ol>
@@ -23,7 +23,8 @@ Configure the following fields, leave the others at their default value.
 Now set up the software to run the job. Using sbt, an open source build tool, you'll build the JAR for the job you'll submit to the Cloud Dataproc cluster. This JAR will contain the program and the required packages necessary to run the job. The job will detect faces in a set of image files stored in a Google Cloud Storage (GCS) bucket, and write out image files with the faces outlined, to either the same or to another Cloud Storage bucket.
 
 <hr>
-Step 1: Set up Scala and sbt.  In the SSH window, install Scala and sbt with the following commands so that you can compile the code:
+<h6>Step 1</hs> 
+Set up Scala and sbt.  In the SSH window, install Scala and sbt with the following commands so that you can compile the code:
 <ol>
   <li>sudo apt-get install -y dirmngr</li>
   <li>sudo apt-get update</li>
@@ -37,8 +38,8 @@ sudo tee -a /etc/apt/sources.list.d/sbt.list</li>
 
 <hr>
 
-<h6>Step 2: Set up the Feature Detector Files</h6>
-
+<h6>Step 2</hs> 
+Set up the Feature Detector Files
 Now you'll build the Feature Detector files. The code for this lab is available in the Cloud Dataproc repository on github. You'll clone the repository, then cd into the directory for this lab and build a "fat JAR" of the feature detector so that it can be submitted to Cloud Dataproc. Run the following commands in the SSH window:
 <ul>
   <li>sudo apt-get update</li>
@@ -47,8 +48,8 @@ Now you'll build the Feature Detector files. The code for this lab is available 
  </ul>
 
 <hr>
-
-<h6>Step 3: Launch build</h6>
+<h6>Step 3</hs>
+Launch build
 <ul>
   <li>sbt assembly</li>
  </ul>
