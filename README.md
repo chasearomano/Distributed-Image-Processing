@@ -56,7 +56,7 @@ Now you'll build the Feature Detector files. The code for this lab is available 
 
 <hr>
   
-###Create a GCS bucket and collect images
+### Create a GCS bucket and collect images
 <ul>
   <li>Fetch the Project ID to use to name your bucket.</li>
   <li>GCP_PROJECT=$(gcloud config get-value core/project)</li>
