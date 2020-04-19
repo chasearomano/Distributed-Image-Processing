@@ -23,6 +23,7 @@ Configure the following fields, leave the others at their default value.
 Now set up the software to run the job. Using sbt, an open source build tool, you'll build the JAR for the job you'll submit to the Cloud Dataproc cluster. This JAR will contain the program and the required packages necessary to run the job. The job will detect faces in a set of image files stored in a Google Cloud Storage (GCS) bucket, and write out image files with the faces outlined, to either the same or to another Cloud Storage bucket.
 
 <hr>
+
 <h6>Step 1</hs> 
 Set up Scala and sbt.  In the SSH window, install Scala and sbt with the following commands so that you can compile the code:
 <ol>
